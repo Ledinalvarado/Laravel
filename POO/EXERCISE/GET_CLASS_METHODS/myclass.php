@@ -9,7 +9,7 @@
 
 class myclass {
     // constructor
-    function myclass()
+    function __construct()
     {
         return(true);
     }
