@@ -22,6 +22,7 @@ class Pagina
 
     public static function bienvenida2(){
         //        echo "Bienvenidos a : ".$this->nombre;//no se puede acceder a los atributos de la clase
+        echo "Bienvenido a ".self::$url;//al atributo $url podemos acceder porque es static
     }
 
 }
@@ -31,3 +32,11 @@ $pagina->bienvenido();
 
 
 //Pagina::bienvenida2();//esto generara un error porque estamos tratando de acceder a un atributo desde un metodo static ////tambien esta es una nueva manera de acceder a un metodo sin necesidad de crear una instancia de la clase
+
+
+
+class Web extends Pagina{
+
+}
+
+Web::bienvenida2();
