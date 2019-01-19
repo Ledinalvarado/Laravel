@@ -6,19 +6,13 @@
  * Time: 6:01 PM
  */
 require 'index.php';
-class people {
-    use Persona;
-    public function asignarNombre($nombre)
-    {
-        // TODO: Implement asignarNombre() method.
-        $this->nombre=$nombre;
-    }
 
-
+class One{
+    use Simple;
 }
 
-$persona=new people();
-$persona->asignarNombre("ledin");
-echo $persona->nombre;
+$uno=new One();
+echo $uno->className();
+
 
 ?>
